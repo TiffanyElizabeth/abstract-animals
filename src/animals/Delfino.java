@@ -1,6 +1,6 @@
 package animals;
 
-public class Delfino extends Animale {
+public class Delfino extends AbstractAnimale implements INuotante {
     // characteristics
     protected String subspecies;
 
@@ -27,5 +27,10 @@ public class Delfino extends Animale {
     @Override
     public void mangia() {
         System.out.println("pesce");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
     }
 }

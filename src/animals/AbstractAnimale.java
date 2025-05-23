@@ -1,6 +1,6 @@
 package animals;
 
-public abstract class Animale {
+public abstract class AbstractAnimale {
     // characteristics
     protected String name;
 
@@ -14,7 +14,7 @@ public abstract class Animale {
     }
 
     // constructor
-    public Animale(String name) {
+    public AbstractAnimale(String name) {
         this.name = name;
     }
 

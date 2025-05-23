@@ -1,6 +1,6 @@
 package animals;
 
-public class Passerotto extends Animale {
+public class Passerotto extends AbstractAnimale implements IVolante {
     // characteristics
     protected String color;
 
@@ -27,5 +27,10 @@ public class Passerotto extends Animale {
     @Override
     public void mangia() {
         System.out.println("fruttà, verdura");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }

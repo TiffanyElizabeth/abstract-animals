@@ -1,7 +1,16 @@
 package animals;
 
 public class Main {
+    static public void faiVolare(IVolante animale) {
+        animale.vola();
+    }
+
+    static public void faiNuotare(INuotante animale) {
+        animale.nuota();
+    }
+
     public static void main(String[] args) {
+
         Cane shiloh = new Cane("shiloh", "cavalier king charles spaniel");
         shiloh.dormi();
         shiloh.mangia();
@@ -21,5 +30,11 @@ public class Main {
         blue.dormi();
         blue.mangia();
         blue.verso();
+
+        faiNuotare(blue);
+        faiVolare(baldy);
+        faiVolare(chipper);
+
+        blue.nuota();
     }
 }

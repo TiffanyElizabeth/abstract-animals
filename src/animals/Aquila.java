@@ -1,6 +1,6 @@
 package animals;
 
-public class Aquila extends Animale {
+public class Aquila extends AbstractAnimale implements IVolante {
     // characteristics
     protected String subspecies;
 
@@ -27,5 +27,10 @@ public class Aquila extends Animale {
     @Override
     public void mangia() {
         System.out.println("carne");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }

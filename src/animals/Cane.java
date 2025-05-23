@@ -1,6 +1,6 @@
 package animals;
 
-public class Cane extends Animale {
+public class Cane extends AbstractAnimale {
     // characteristics
     protected String breed;
 
